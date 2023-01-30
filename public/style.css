@@ -1,13 +1,7 @@
-body {
-  font-family: sans-serif;
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
 a {
   text-decoration: none;
-}
-
-label {
-  display: block;
 }
 
 nav a {
@@ -15,7 +9,242 @@ nav a {
   margin: 1em;
 }
 
-form div {
+.navMenu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.navMenu a {
+  color: #f6f4e6;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  width: 80px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:hover {
+  color: #fddb3a;
+}
+
+#auth-form div {
   margin: 1em;
   display: inline-block;
+}
+* {
+  box-sizing: border-box;
+  font-family: montserrat, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #74ebd5;
+  background-image: linear-gradient(90deg, #74ebd5 0%, #2d50bb 100%);
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+}
+
+main {
+  padding: 25px 25px 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+input {
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+nav {
+  align-items: center;
+  background-color: #333333;
+  color: #c0c0c0;
+  display: flex;
+  height: 80px;
+  padding: 10px;
+}
+
+.link {
+  margin: 12px;
+  color: aqua;
+}
+
+.link:hover {
+  color: blue;
+}
+
+.App {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #74ebd5;
+  background-image: linear-gradient(90deg, #74ebd5 0%, #2d50bb 100%);
+}
+
+#auth-form {
+  display: block;
+  position: relative;
+  width: 50%;
+}
+
+#auth-form:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  background-image: linear-gradient(to bottom right, grey, lightblue);
+}
+
+.title {
+  background-color: #74ebd5;
+  background-image: linear-gradient(90deg, #74ebd5 0%, #2d50bb 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-form {
+  position: relative;
+  display: block;
+  background-color: white;
+  padding: 40px;
+  z-index: 2;
+}
+
+.inner-form h2 {
+  color: #888;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 28px;
+}
+
+.form-group {
+  display: block;
+  color: #666;
+  width: 300px;
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  color: #666;
+  font-size: 12px;
+  margin-bottom: 5px;
+  transition: 0.4s;
+}
+
+#auth-form .inner-form .form-group:focus-within label {
+  color: #fe4880;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+input:focus {
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  border: none;
+  border-radius: 30px;
+  width: 100%;
+  padding: 5px;
+}
+
+button:hover {
+  background-color: darkgrey;
+  cursor: pointer;
+  color: white;
+}
+
+.auth-error {
+  color: red;
+  font-size: 13px;
+}
+
+.inner {
+  /* background-image: url('https://cdn.dribbble.com/users/925716/screenshots/3333720/attachments/722376/after_noon.png'); */
+  background-image: url("https://media.istockphoto.com/photos/fog-in-black-smoke-and-mist-on-wooden-table-halloween-backdrop-picture-id1341515382?b=1&k=20&m=1341515382&s=170667a&w=0&h=tWLxX861vcc63wxX1flAvwVhZouZ3blavWpUsu0K55k=");
+  width: 520px;
+  margin-left: 520px;
+  margin-top: 100px;
+  border-radius: 60px;
+}
+
+.app-wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.city {
+  color: white;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+
+.date {
+  color: white;
+  font-size: 16px;
+}
+
+.temp {
+  color: white;
+  font-size: 102px;
+  font-weight: 900;
+  margin: 30px 0px;
+  text-shadow: 2px 7px rgba(0, 0, 0, 0.75);
+}
+
+.weather {
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 15px;
+  text-shadow: 0px 3px rgba(0, 0, 0, 0.4);
+}
+
+.hi-low {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  text-shadow: 0px 3px rgba(0, 0, 0, 0.4);
+}
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  margin-left: 32rem;
+  margin-top: 3rem;
+}
+
+.text {
+  margin: 1rem;
 }
